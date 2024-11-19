@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Self from '../assets/ass4.png';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
@@ -19,7 +19,9 @@ const About = () => {
           initial='hidden'
           whileInView='show'
           viewport={{once: false, amount: 0.3}}
-          className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'></motion.div>
+          className='flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
+          <img src={Self} alt=' ' />
+          </motion.div>
           {/* text */}
           <motion.div 
           variants={fadeIn('left', 0.5)}
@@ -29,10 +31,10 @@ const About = () => {
           className='flex-1'>
             <h2 className='h2 text-accent'>About Me.</h2>
             <h3 className='h3 mb-4'>
-              I'm a 
+            I am a Computer Science student passionate about creativity. 
             </h3>
             <p className='mb-6'>
-              lorem
+            Pursuing a degree in Computer Science while exploring creative fields like video editing and event organizing. Experience includes roles in public relations and contributing to university events, with a strong emphasis on skill development and impactful collaboration.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -58,7 +60,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={7} duration={3} /> :
+                  {inView ? <CountUp start={0} end={20} duration={3} /> :
                   null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>

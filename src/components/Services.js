@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { BsArrowUpRight } from 'react-icons/bs';
+import Pic from '../assets/ass2.png';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
@@ -38,11 +37,12 @@ const Services = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3}}
-          className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
+          className='flex-1 mix-blend-lighten mb-12 lg:mb-0 space-x-[-25px] space-y-[-15px]'>
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
               I'm a Third Year Student with over 2 years of freelancing experience
               </h3>
+          <img src={Pic} alt=' ' className='ml-4' /> {/* Adjust the margin-left here */}
           </motion.div>
           {/* services */}
           <motion.div 

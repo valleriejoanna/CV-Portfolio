@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Image from '../assets/ass1.svg';
 import { FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
@@ -47,7 +46,7 @@ const Banner = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
             className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              lorem
+              A third-year Computer Science student with experience in video editing, event organizing, and public relations. Focused on learning, creativity, and contributing to impactful projects.
             </motion.p>
             {/* socials */}
             <motion.div 
